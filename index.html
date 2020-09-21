@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="App">
+            <header id="search">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="media/frog-152631_1280.png" width="50" />
+                    </div>
+                    <div class="col-3">
+                        <form id="city-search">
+                            <input type="search" placeholder="Enter a city..." autocomplete="off" autofocus="on"
+                                id="site-search" name="q" aria-label="Search
+                  through site content" />
+                        </form>
+                    </div>
+                    <div class="col-3">
+
+                        <button type="button" class="btn btn-outline-warning" id="needle-loc">📍</button>
+
+                        <div class="needle-search">
+                            <button type="button" class="btn btn-outline-warning" id="search-btn">
+                                <strong>Search</strong>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="news">
+                            <button type="button" class="btn btn-outline-warning">🔔</button>
+                        </div>
+                    </div>
+            </header>
+            <header class id="tabs">
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hourly</a>
+                    </li>
+                </ul>
+            </header>
+            <main class="actual-weather">
+                <div class="row">
+                    <div class="col-4">
+                        <h1 id="current-temp"></h1>
+                        <h2></h2>
+                        <p class="date" id="currentDayTime"></p>
+                        <p class="weather" id="weather-description"></p>
+                    </div>
+                    <div class="col-4">
+                        <img src="media/sunny2.png" alt="sunny" width="150" />
+                    </div>
+                    <div class="col-4">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary" id="c-button">°C</button>
+                            <button type="button" class="btn btn-secondary" id="f-button">F</button>
+                        </div>
+                        <section class="actual-details">
+                            <p class="wind">Wind: <span id="current-wind"></span> km/h</p>
+                            <p class="precipitation">Precipitation: <span id="current-precipitation"></span>%</p>
+                            <p class="humidity">Humidity: <span id="current-humidity"></span>%</p>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <main class="week">
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Monday</h1>
+                        <img src="media/sunny2.png" alt="sunny" width="60" />
+                        <p class="real-feel-temp">24°C/ 20°C</p>
+
+                        <img src="media/chart-35773_1280 (1).png" alt="chart-little" width="80" />
+                        <canvas id="canvas"> </canvas>
+                    </div>
+                    <div class="col-2">
+                        <h1>Tuesday</h1>
+                        <img src="media/sunny2.png" alt="sunny" width="60" />
+                        <p class="real-feel-temp">24°C/ 20°C</p>
+                        <img src="media/chart-35773_1280 (1).png" alt="chart-little" width="80" />
+                        <canvas id="canvas"> </canvas>
+                    </div>
+                    <div class="col-2">
+                        <h1>Wednesday</h1>
+                        <img src="media/sunny2.png" alt="sunny" width="60" />
+                        <p class="real-feel-temp">24°C/ 20°C</p>
+                        <img src="media/chart-35773_1280 (1).png" alt="chart-little" width="80" />
+                        <canvas id="canvas"> </canvas>
+                    </div>
+                    <div class="col-2">
+                        <h1>Thursday</h1>
+                        <img src="media/sunny2.png" alt="sunny" width="60" />
+                        <p class="real-feel-temp">24°C/ 20°C</p>
+                        <img src="media/chart-35773_1280 (1).png" alt="chart-little" width="80" />
+                        <canvas id="canvas"> </canvas>
+                    </div>
+                    <div class="col-2">
+                        <h1>Friday</h1>
+                        <img src="media/sunny2.png" alt="sunny" width="60" />
+                        <p class="real-feel-temp">24°C/ 20°C</p>
+                        <img src="media/chart-35773_1280 (1).png" alt="chart-little" width="80" />
+                        <canvas id="canvas"> </canvas>
+                    </div>
+                    <div class="col-2">
+                        <h1>Friday</h1>
+                        <img src="media/sunny2.png" alt="sunny" width="60" />
+                        <p class="real-feel-temp">24°C/ 20°C</p>
+                        <img src="media/chart-35773_1280 (1).png" alt="chart-little" width="80" />
+                        <canvas id="canvas"> </canvas>
+                    </div>
+                </div>
+        </div>
+        </main>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+.App {
+  border: 5px solid #ffc93c;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 800px;
+  height: 750px;
+}
+
+#search {
+  border-radius: 20px;
+  padding: 10px 30px;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: relative;
+  width: 100%;
+}
+#search img {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+}
+#search button {
+  margin-left: 20px;
+}
+#search .col-3 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.needle-search {
+  display: inline;
+}
+.news {
+  margin-left: 100px;
+}
+button {
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  background: #ffc93c;
+  color: #07689f;
+  cursor: pointer;
+}
+#tabs ul li {
+  background: #ffe79f;
+  font-weight: bold;
+  color: #07689f;
+}
+
+.actual-weather {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.actual-weather h1 {
+  margin-bottom: 0;
+  font-size: 3rem;
+  line-height: 60px;
+}
+.date,
+.wind,
+.precipitation,
+.humidity {
+  margin-bottom: 0;
+}
+.actual-details {
+  margin-top: 20px;
+}
+.week .row {
+  margin: 0 auto;
+  margin: 0px 20px;
+}
+.col-2 {
+  border: 1px solid #ffc93c;
+  border-radius: 20px;
+  margin: 45px 0px;
+  padding: 0px;
+  width: 80px;
+  height: 300px;
+}
+.col-2 h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+.col-2 p {
+  text-align: center;
+  padding: 30px 0px;
+}
+.col-2 img {
+  display: block;
+  margin: 0 auto;
+}
+.col-4 {
+  color: #40a8c4;
+}
